@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 0.5px solid;
+    border-block-color: #d4d4d4;
     
   }
   .article-card h3 {
@@ -13,6 +15,4 @@
 color:#0059bf;
 
    }
-   hr{
-    border:0.5px solid d4d4d4;
-   }
+  

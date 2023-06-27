@@ -1,13 +1,13 @@
-async function fetchMoviesJSON() {
+async function fetchDataJSON() {
 
-const response = await fetch('./code-test.json');
+const response = await fetch('/js/code-test.json');
 
-const movies = await response.json();
-return movies;
+const data = await response.json();
+return data;
 }
-fetchMoviesJSON().then(movies => {
+fetchDataJSON().then(data => {
 const articleContainer = document.getElementById ('article-container');
-movies.articles.forEach(article => {
+data.articles.forEach(article => {
 articleContainer.innerHTML += renderArticle(article) ;
 })
 })
@@ -27,7 +27,5 @@ alt="${article.thumbnail.title}" width="${article.thumbnail.width}"
 height="${article.thumbnail.height}">
 </a>
 </div>
-</div>
-
-<hr>`;
+</div>`;
 }
